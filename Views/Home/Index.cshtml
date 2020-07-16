@@ -2,7 +2,25 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <label name="username" class="card-body">Username:</label>
-    <input type="text" />
-</div>
+<h1>Add user Page</h1>
+<form method="post">
+    <div>
+        <label for="username" id="username">User Name:</label>
+        <input type="text" id="username" />
+    </div>
+    <div>
+        <label for="email" id="email">Email:</label>
+        <input type="email" id="email" />
+    </div>
+    <div>
+        <label for="password" id="password">Password:</label>
+        <input type="password" id="Password" />
+    </div>
+    <div>
+        <label for="repeatPassword" id="repeatPassword">Repeat Password:</label>
+        <input type="password" id="repeatPassword" />
+    </div>
+    <button class="btn-group" type="submit">Submit New User</button>
+
+
+</form>
