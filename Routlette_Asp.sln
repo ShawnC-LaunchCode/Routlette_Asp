@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routlette_Asp", "Routlette_Asp.csproj", "{2898F385-8290-4AAB-942E-6525A2BE7FCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2898F385-8290-4AAB-942E-6525A2BE7FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2898F385-8290-4AAB-942E-6525A2BE7FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2898F385-8290-4AAB-942E-6525A2BE7FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2898F385-8290-4AAB-942E-6525A2BE7FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {034178D9-078B-4064-9C72-9CD7D137FE89}
+	EndGlobalSection
+EndGlobal
