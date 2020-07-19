@@ -10,8 +10,9 @@ namespace Routlette_Asp.Data
     {
         public  static List<User> MainList = new List<User>();
 
-
-
-
+        internal static void Add(User newUser)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

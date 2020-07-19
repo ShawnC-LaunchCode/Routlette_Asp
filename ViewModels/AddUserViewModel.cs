@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Routlette_Asp.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -16,10 +17,10 @@ namespace Routlette_Asp.ViewModels
         [StringLength(50, ErrorMessage = "Password too long!")]
         public string Password { get; set; }
 
-       
+        [DataType(DataType.Password), Compare(nameof(Password))]
+        [StringLength(50, ErrorMessage = "Password wasn't that long, neither this, shall be.")]
+        public string repeatPassword { get; set; }
 
-
-
-
+       public User User { get; set; }
     }
 }

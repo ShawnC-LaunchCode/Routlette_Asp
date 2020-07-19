@@ -1,0 +1,22 @@
+﻿@model Routlette_Asp.ViewModels.AddUserViewModel;
+
+<h1>Add user Page</h1>
+<form asp-controller="Users" asp-action="Add" method="post">
+    @*<div asp-validation-summary="ValidationSummary.ModelOnly"></div>*@
+    <div>
+        <label asp-for="Username">User Name:</label>
+        <input asp-for="Username" />
+        @*<span asp-validation-for="Username"></span>*@
+    </div>
+    <div>
+        <label asp-for="Password">Password:</label>
+        <input asp-for="Password" />
+        @*<span asp-validation-for="Password"></span>*@
+    </div>
+    <div>
+        <label asp-for="repeatPassword">Repeat Password:</label>
+        <input asp-for="repeatPassword" />
+        @*<span asp-validation-for="repeatPassword"></span>*@
+    </div>
+    <button class="btn-group" type="submit">Submit New User</button>
+</form>
