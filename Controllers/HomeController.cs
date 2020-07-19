@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Routlette_Asp.Models;
+using Routlette_Asp.ViewModels;
 
 namespace Routlette_Asp.Controllers
 {
@@ -52,8 +54,18 @@ namespace Routlette_Asp.Controllers
             return Redirect("/Home/Index");
         }
 
+        [HttpPost]
+        public IActionResult Login(LoginViewModel loginViewModel)
+        {
 
-        
+            if (loginViewModel.Username == "Shawn" )
+            {
+
+
+                return Redirect("/roulette/index");
+            }
+            else return Redirect("/");
+        }
 
 
     }
