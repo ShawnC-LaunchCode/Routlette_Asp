@@ -55,16 +55,16 @@ namespace Routlette_Asp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(string Username, string Password)
+        public IActionResult Login()//string Username, string Password
         {
 
-            if (Username == "Shawn" )
-            {
+            //if (Username == "Shawn" )
+            //{
 
 
-                return Redirect("/roulette/index");
-            }
-            else return Redirect("/");
+            return Redirect("/Roulette/index");
+            //}
+            //else return Redirect("/");
         }
 
 
