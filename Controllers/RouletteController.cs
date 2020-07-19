@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Routlette_Asp.Controllers
 {
-    public class Roulette : Controller
+    public class RouletteController : Controller
     {
         public IActionResult Index()
         {
