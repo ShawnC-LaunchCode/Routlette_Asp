@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Routlette_Asp.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace Routlette_Asp.ViewModels
         [StringLength(20, MinimumLength = 1, ErrorMessage = "Needs to be between 1 and 20 chars")]
         public string Password { get; set; }
 
-       
+       public User User { get; set; }
 
 
        

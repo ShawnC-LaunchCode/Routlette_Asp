@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Routlette_Asp.Models;
 using Routlette_Asp.ViewModels;
+using Routlette_Asp.Data;
 
 namespace Routlette_Asp.Controllers
 {
@@ -15,7 +16,7 @@ namespace Routlette_Asp.Controllers
 
     public class HomeController : Controller
     {
-        private List<User> users = new List<User>();
+        
         
         
         private readonly ILogger<HomeController> _logger;
@@ -27,7 +28,7 @@ namespace Routlette_Asp.Controllers
 
         public IActionResult Index()
         {
-            users.Add(new User("Shawn", "1234"));
+            
 
             return View();
         }
@@ -50,21 +51,21 @@ namespace Routlette_Asp.Controllers
         [HttpPost]
         public IActionResult Register(User newUser, string repeatPassword)
         {                
-            users.Add(newUser);
+            //users.Add(newUser);
             return Redirect("/Home/Index");
         }
 
         [HttpPost]
-        public IActionResult Login()//string Username, string Password
+        public IActionResult Login(LoginViewModel loginViewModel)//
         {
 
-            //if (Username == "Shawn" )
-            //{
+            if (loginViewModel.Username == "Shawn")
+            {
 
 
-            return Redirect("/Roulette/index");
-            //}
-            //else return Redirect("/");
+                return Redirect("/Roulette");
+            }
+            else return Redirect("/");
         }
 
 

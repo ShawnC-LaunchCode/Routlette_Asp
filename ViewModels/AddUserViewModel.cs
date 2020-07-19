@@ -13,6 +13,7 @@ namespace Routlette_Asp.ViewModels
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Name must be between 3 and 50 characters")]
         public string Username { get; set; }
 
+        [DataType(DataType.Password)]
         [Required(ErrorMessage = "Password is required")]
         [StringLength(50, ErrorMessage = "Password too long!")]
         public string Password { get; set; }

@@ -28,5 +28,10 @@ namespace Routlette_Asp.Models
             this.Username = username;
             this.Password = password;
         }
+
+        public override string ToString()
+        {
+            return Username;
+        }
     }
 }

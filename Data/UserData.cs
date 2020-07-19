@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace Routlette_Asp.Data
 {
-    public class UserData
+    public  class UserData
     {
         static private Dictionary<int, User> Users = new Dictionary<int, User>();
+
+        public UserData()
+        {
+            User temp = new User("Shawn", "1234");
+            Users.Add(1,temp);
+        }
+
         public static void Add(User newUser)
         {
            //TODO make sure username doesnt already exist in Users
