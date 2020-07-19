@@ -28,8 +28,6 @@ namespace Routlette_Asp.Controllers
 
         public IActionResult Index()
         {
-            
-
             return View();
         }
 
@@ -44,26 +42,13 @@ namespace Routlette_Asp.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Register()
-        {
-            return View();
-        }
         [HttpPost]
-        public IActionResult Register(User newUser, string repeatPassword)
-        {                
-            //users.Add(newUser);
-            return Redirect("/Home/Index");
-        }
-
-        [HttpPost]
-        public IActionResult Login(LoginViewModel loginViewModel)//
+        public IActionResult Login(LoginViewModel loginViewModel)
         {
-
-            if (loginViewModel.Username == "Shawn")
+            if (UserData.UserAuth(loginViewModel.Username, loginViewModel.Password))
             {
-
-
-                return Redirect("/Roulette");
+                return View("/Roulette", loginViewModel);
+                //return Redirect("/Roulette");
             }
             else return Redirect("/");
         }

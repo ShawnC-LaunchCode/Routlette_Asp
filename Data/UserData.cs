@@ -9,11 +9,13 @@ namespace Routlette_Asp.Data
     public  class UserData
     {
         static private Dictionary<int, User> Users = new Dictionary<int, User>();
+        // key-1 value-first user
+        //key-2  value-second user
 
         public UserData()
         {
             User temp = new User("Shawn", "1234");
-            Users.Add(1,temp);
+            Users.Add(temp.Id,temp);
         }
 
         public static void Add(User newUser)
@@ -25,6 +27,18 @@ namespace Routlette_Asp.Data
         public static User GetById(int id)
         {
             return Users[id];
+        }
+
+        public static bool UserAuth (string username, string password)
+        {
+            foreach(KeyValuePair<int,User> user in Users)
+            {
+                if(user.Value.Username == username && user.Value.Password == password)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
