@@ -15,8 +15,18 @@ namespace Routlette_Asp.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Add()
         {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Add(string wtf)
+        {
+
+
             return View();
         }
 
