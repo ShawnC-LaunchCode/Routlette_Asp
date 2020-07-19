@@ -55,10 +55,10 @@ namespace Routlette_Asp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(LoginViewModel loginViewModel)
+        public IActionResult Login(string Username, string Password)
         {
 
-            if (loginViewModel.Username == "Shawn" )
+            if (Username == "Shawn" )
             {
 
 
