@@ -14,7 +14,9 @@ namespace Routlette_Asp.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            List<User> users = new List<User>(UserData.GetAll());
+
+            return View(users);
         }
 
        
@@ -38,15 +40,11 @@ namespace Routlette_Asp.Controllers
 
                 UserData.Add(newUser);
 
+               
+
                 return Redirect("/Roulette");
             }
-
-
-
-
                 return View(addUserViewModel);
         }
-
-
     }
 }

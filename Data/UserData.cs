@@ -55,5 +55,10 @@ namespace Routlette_Asp.Data
             }
             return false;
         }
+
+        public static IEnumerable<User> GetAll()
+        {
+            return Users.Values;
+        }
     }
 }

@@ -14,9 +14,9 @@ namespace Routlette_Asp.Controllers
         public IActionResult Index()
         {
             //get what user is logged in
-
+            List<User> users = new List<User>(UserData.GetAll());
             //get that users info
-            return View(); //pass that user to the view
+            return View(users); //pass that user to the view
         }
 
         
