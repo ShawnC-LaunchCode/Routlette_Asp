@@ -45,7 +45,8 @@ namespace Routlette_Asp.Controllers
                 User user = UserData.UserAuth(loginViewModel.Username, loginViewModel.Password);
                 if (user != null)
                 {
-                    return View("/Roulette", user);
+                    //ViewBag.user = user;
+                    return View("/Roulette",user);
                 }
             }
             return Redirect("/Home");

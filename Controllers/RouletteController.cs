@@ -16,7 +16,7 @@ namespace Routlette_Asp.Controllers
             //get what user is logged in
             
             //get that users info
-            return View(); //pass that user to the view
+            return View(ViewBag.user); //pass that user to the view
         }
 
         
