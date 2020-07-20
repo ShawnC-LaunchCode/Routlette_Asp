@@ -29,6 +29,21 @@ namespace Routlette_Asp.Data
             return Users[id];
         }
 
+        public static void DeleteUser(int id)
+        {
+            Users.Remove(id);
+        }
+
+        public static void EditUser(int idToEdit, User newInfo)
+        {
+            //DeleteUser(idToEdit);
+            //Add(newInfo);
+
+            Users[idToEdit].Username = newInfo.Username;
+            Users[idToEdit].Password = newInfo.Password;
+            Users[idToEdit].Bank = newInfo.Bank;
+        }
+
         public static bool UserAuth (string username, string password)
         {
             foreach(KeyValuePair<int,User> user in Users)
