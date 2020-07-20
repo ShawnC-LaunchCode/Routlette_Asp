@@ -37,14 +37,10 @@ namespace Routlette_Asp.Controllers
                     Username = addUserViewModel.Username,
                     Password = addUserViewModel.Password
                 };
-
                 UserData.Add(newUser);
-
-               
-
                 return Redirect("/Roulette");
             }
-                return View(addUserViewModel);
+            return View(addUserViewModel);
         }
     }
 }

@@ -22,6 +22,6 @@ namespace Routlette_Asp.ViewModels
         [StringLength(50, ErrorMessage = "Password wasn't that long, neither this, shall be.")]
         public string repeatPassword { get; set; }
 
-       public User User { get; set; }
+       
     }
 }

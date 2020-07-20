@@ -40,16 +40,15 @@ namespace Routlette_Asp.Controllers
         [HttpPost]
         public IActionResult Login(LoginViewModel loginViewModel)
         {
-            if (UserData.UserAuth(loginViewModel.Username, loginViewModel.Password))
+            if (ModelState.IsValid)
             {
-
-
-                return View("/Roulette");
-                //return Redirect("/Roulette");
+                User user = UserData.UserAuth(loginViewModel.Username, loginViewModel.Password);
+                if (user != null)
+                {
+                    return View("/Roulette", user);
+                }
             }
-            else return Redirect("/Home");
+            return Redirect("/Home");
         }
-
-
     }
 }

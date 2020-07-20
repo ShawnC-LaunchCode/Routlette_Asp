@@ -44,16 +44,16 @@ namespace Routlette_Asp.Data
             Users[idToEdit].Bank = newInfo.Bank;
         }
 
-        public static bool UserAuth (string username, string password)
+        public static User UserAuth (string username, string password)
         {
             foreach(KeyValuePair<int,User> user in Users)
             {
                 if(user.Value.Username == username && user.Value.Password == password)
                 {
-                    return true;
+                    return user.Value;
                 }
             }
-            return false;
+            return null;
         }
 
         public static IEnumerable<User> GetAll()

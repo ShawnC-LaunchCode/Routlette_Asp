@@ -8,7 +8,7 @@ namespace Routlette_Asp.ViewModels
 {
     public class RouletteViewModel
     {
-        public User User { get; set; }
+      
 
 
     }

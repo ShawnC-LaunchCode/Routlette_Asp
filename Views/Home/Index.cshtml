@@ -3,13 +3,15 @@
 <h1>Welcome to the Casino</h1>
 <form method="post" asp-controller="Home" asp-action="Login">
     <div>
-        <label asp-for="Username" >User Name:</label>
-        <input asp-for="Username"  />
+        <label asp-for="Username">User Name:</label>
+        <input asp-for="Username" />
+        <span asp-validation-for="Username"></span>
     </div>
    
     <div>
-        <label asp-for="Password" >Password:</label>
-        <input asp-for="Password"  />
+        <label asp-for="Password">Password:</label>
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span>
     </div>
     
     <button class="btn-group" type="submit">Login</button>

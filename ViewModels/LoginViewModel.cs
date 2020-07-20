@@ -14,9 +14,10 @@ namespace Routlette_Asp.ViewModels
         public string Username { get; set; }
 
         [Required(ErrorMessage = "Required")]
+        [DataType(DataType.Password)]
         [StringLength(20, MinimumLength = 1, ErrorMessage = "Needs to be between 1 and 20 chars")]
         public string Password { get; set; }
 
-       public User User { get; set; }
+       
     }
 }
