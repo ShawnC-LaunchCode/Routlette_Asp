@@ -24,7 +24,7 @@ namespace Roulette_Asp.Controllers
         public IActionResult Index()
         {
             User temp = new User("Shawn", "1234");
-            UserData.Add(temp);
+            //UserData.Add(temp);
             return View();
         }
         public IActionResult Privacy()
@@ -42,12 +42,12 @@ namespace Roulette_Asp.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = UserData.UserAuth(loginViewModel.Username, loginViewModel.Password);
-                if (user != null)
-                {
-                    //ViewBag.user = user;
-                    return View("/Roulette",user);
-                }
+                //User user = UserData.UserAuth(loginViewModel.Username, loginViewModel.Password);
+                //if (user != null)
+                //{
+                //    //ViewBag.user = user;
+                //    return View("/Roulette",user);
+                //}
             }
             return Redirect("/Home");
         }

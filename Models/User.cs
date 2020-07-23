@@ -19,12 +19,11 @@ namespace Roulette_Asp.Models
 
         public User()
         {
-           
-            Bank = 500;
         }
 
         public User(string username, string password) : this()
         {
+            Bank = 500;
             this.Username = username;
             this.Password = password;
         }
