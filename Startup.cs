@@ -9,9 +9,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Routlette_Asp.Data;
+using Roulette_Asp.Data;
 
-namespace Routlette_Asp
+namespace Roulette_Asp
 {
     public class Startup
     {

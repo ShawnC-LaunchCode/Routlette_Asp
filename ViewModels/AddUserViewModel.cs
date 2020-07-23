@@ -1,11 +1,11 @@
-﻿using Routlette_Asp.Models;
+﻿using Roulette_Asp.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Routlette_Asp.ViewModels
+namespace Roulette_Asp.ViewModels
 {
     public class AddUserViewModel
     {

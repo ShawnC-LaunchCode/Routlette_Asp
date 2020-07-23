@@ -1,6 +1,6 @@
 using System;
 
-namespace Routlette_Asp.Models
+namespace Roulette_Asp.Models
 {
     public class ErrorViewModel
     {

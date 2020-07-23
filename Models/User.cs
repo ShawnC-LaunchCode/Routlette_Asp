@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Routlette_Asp.Models
+namespace Roulette_Asp.Models
 {
     public class User
     {

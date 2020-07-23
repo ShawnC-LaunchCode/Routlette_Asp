@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Routlette_Asp": {
+    "Roulette_Asp": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

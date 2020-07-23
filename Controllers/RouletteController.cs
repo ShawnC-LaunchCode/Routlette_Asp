@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Routlette_Asp.Data;
-using Routlette_Asp.Models;
-using Routlette_Asp.ViewModels;
+using Roulette_Asp.Data;
+using Roulette_Asp.Models;
+using Roulette_Asp.ViewModels;
 
-namespace Routlette_Asp.Controllers
+namespace Roulette_Asp.Controllers
 {
     public class RouletteController : Controller
     {

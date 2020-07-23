@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Routlette_Asp.Models;
-using Routlette_Asp.ViewModels;
-using Routlette_Asp.Data;
+using Roulette_Asp.Models;
+using Roulette_Asp.ViewModels;
+using Roulette_Asp.Data;
 
-namespace Routlette_Asp.Controllers
+namespace Roulette_Asp.Controllers
 {
     
 
