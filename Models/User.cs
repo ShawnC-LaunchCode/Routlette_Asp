@@ -13,13 +13,13 @@ namespace Routlette_Asp.Models
 
         public double Bank { get; set; }
 
-        private static int nextId { get; set; }
+        
 
-        public int Id { get; }
+        public int Id { get; set; }
 
         public User()
         {
-            Id = nextId++;
+           
             Bank = 500;
         }
 
