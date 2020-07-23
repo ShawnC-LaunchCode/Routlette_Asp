@@ -13,6 +13,11 @@ namespace Roulette_Asp.Models
 
         public double Bank { get; set; }
 
+
+        //0=admin, 1=user, 2=delete dummies-->regular users can delete these, but not delete users or admins
+        public int UserLevel { get; set; }
+
+
         
 
         public int Id { get; set; }
@@ -26,6 +31,7 @@ namespace Roulette_Asp.Models
             Bank = 500;
             this.Username = username;
             this.Password = password;
+            this.UserLevel = 1;
         }
 
         public override string ToString()
